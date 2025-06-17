@@ -10,4 +10,4 @@ def get_files_info(working_directory, directory=None):
 
     if abs_target_dir.startswith(abs_working_dir):
         pass
-    #still poe grinding
+    #summer + poe currently
