@@ -3,6 +3,7 @@ import os
 from google import genai
 from google.genai import types
 from dotenv import load_dotenv
+# installed linux mint... lets see if this works
 
 
 def main():
