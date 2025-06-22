@@ -3,7 +3,7 @@ import os
 from google import genai
 from google.genai import types
 from dotenv import load_dotenv
-# managed to not log in to windows yet
+# managed to not log in to windows yet!!!
 
 
 def main():
