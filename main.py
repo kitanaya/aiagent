@@ -3,7 +3,7 @@ import os
 from google import genai
 from google.genai import types
 from dotenv import load_dotenv
-# raspi and pihole back up and running after years of ignoring it
+# too hot, brain not work
 
 
 def main():
