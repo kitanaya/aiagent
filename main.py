@@ -3,7 +3,7 @@ import os
 from google import genai
 from google.genai import types
 from dotenv import load_dotenv
-# too hot, brain not work
+# squid game season3
 
 
 def main():
