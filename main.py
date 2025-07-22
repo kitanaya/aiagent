@@ -3,7 +3,7 @@ import os
 from google import genai
 from google.genai import types
 from dotenv import load_dotenv
-# Started working through OTW's book
+# Last chapter to do
 
 
 def main():
