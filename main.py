@@ -3,7 +3,7 @@ import os
 from google import genai
 from google.genai import types
 from dotenv import load_dotenv
-# lost xp this morning wtf
+# 97.6
 
 
 def main():
