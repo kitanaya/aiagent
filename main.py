@@ -3,7 +3,7 @@ import os
 from google import genai
 from google.genai import types
 from dotenv import load_dotenv
-# doing 100 in ssf? watching python tuts on the side..?
+# lost xp this morning wtf
 
 
 def main():
