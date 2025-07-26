@@ -3,7 +3,7 @@ import os
 from google import genai
 from google.genai import types
 from dotenv import load_dotenv
-# 97.6
+# 98 - all fortress done, no yoke
 
 
 def main():
