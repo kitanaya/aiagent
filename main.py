@@ -3,7 +3,7 @@ import os
 from google import genai
 from google.genai import types
 from dotenv import load_dotenv
-# 98 might be the end.
+# frriiiiiiday
 
 
 def main():
