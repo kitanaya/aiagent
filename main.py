@@ -6,18 +6,20 @@ from google import genai
 
 def main():
     load_dotenv()
-    args = sys.argv
-    message = args[0]
+    args = sys.argv[1:]
 
-    if not args[0]:
+    if not args:
         print('Usage: uv run main.py "your prompt here"')
+        print('\nExample: uv run main.py "Name the top three cyber security jobs."')
         sys.exit(1)
+    user_prompt = " ".join(args)
 
     api_key = os.environ.get("GEMINI_API_KEY")
     client = genai.Client(api_key=api_key)
+
     response = client.models.generate_content(
      model = 'gemini-2.0-flash-001',
-     contents = message
+     contents = user_prompt
     )
 
     print(f"Prompt tokens: {response.usage_metadata.prompt_token_count}")
