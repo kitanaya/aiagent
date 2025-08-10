@@ -3,6 +3,7 @@ import sys
 from dotenv import load_dotenv
 from google import genai
 from google.genai import types
+from config import system_prompt
 
 # kekw
 
@@ -35,12 +36,14 @@ def generate_content(client, messages, verbose):
     response = client.models.generate_content(
         model = 'gemini-2.0-flash-001',
         contents = messages,
+        config = types.GenerateContentConfig(system_instruction=system_prompt),
     )
     if verbose:
         print(f"Prompt tokens: {response.usage_metadata.prompt_token_count}")
         print(f"Response tokens: {response.usage_metadata.candidates_token_count}")
-        print("Response:")
-        print(response.text)
+        
+    print("Response:")
+    print(response.text)
 
 
 if __name__ == "__main__":
