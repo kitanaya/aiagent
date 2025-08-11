@@ -23,14 +23,15 @@ def get_file_content(working_directory, file_path):
 
 schema_get_file_content= types.FunctionDeclaration(
     name="get_file_content",
-    description="Lists the content of the specified file with a maximum of 10000 characters, constrained to the working directory.",
+    description=f"Lists the content of the specified file with a maximum of {MAX_CHARS} characters, constrained to the working directory.",
     parameters=types.Schema(
         type=types.Type.OBJECT,
         properties={
             "file_path": types.Schema(
                 type=types.Type.STRING,
-                description="The file itself to list the content from, relative to the working directory.",
+                description="The file itself to read the content from, relative to the working directory.",
             ),
         },
+		required=["file_path"],
     ),
 )
