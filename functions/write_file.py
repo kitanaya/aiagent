@@ -25,8 +25,8 @@ def write_file(working_directory, file_path, content):
         return f'Error: Writing to file "{file_path}": {e}'
     
 
-schema_write_file_content= types.FunctionDeclaration(
-    name="write_file_content",
+schema_write_file= types.FunctionDeclaration(
+    name="write_file",
     description="writes the given content to a file, constrained to the working directory.",
     parameters=types.Schema(
         type=types.Type.OBJECT,
