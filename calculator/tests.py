@@ -34,7 +34,7 @@ class TestCalculator(unittest.TestCase):
         result = self.calculator.evaluate("")
         self.assertIsNone(result)
 
-    def test_invalid_operator(self):
+    def test_invalid_operator(self): 
         with self.assertRaises(ValueError):
             self.calculator.evaluate("$ 3 5")
 
