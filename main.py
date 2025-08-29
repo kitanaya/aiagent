@@ -7,7 +7,7 @@ from prompts import system_prompt
 from call_function import available_functions, call_function
 from config import MAX_ITERATIONS
 
-# daily check
+# poe2 0.3 release
 
 def main():
     load_dotenv()
